@@ -1,0 +1,14 @@
+Ground Truth (X <tab> Y means X causes Y)
+
+
+Coefficients
+[10]= + noise_10
+[9]= + noise_9
+[8]= + noise_8
+[7]= + noise_7
+[6]= + noise_6
+[5]= + noise_5
+[4]= + noise_4
+[3]= + noise_3
+[2]= + noise_2
+[1]= + noise_1
