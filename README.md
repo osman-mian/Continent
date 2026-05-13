@@ -1,13 +1,24 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+# Continent
+Code for our KDD2024 paper titled [Learning causal networks from episodic data](https://dl.acm.org/doi/abs/10.1145/3637528.3671999)
+
+> Tldr: We discover causal graphs for data obtained in chunks over time. We do not force a single causal network but rather cluster these chunks into multiple potential causal structures.
+
+
+Use **`main.py`** to see an example of how the code works.
+
 ----------------------------------------------------------
 REQUIREMENTS:
 ----------------------------------------------------------
-- Python version: 3.7 or better
+- Python version: 3.8 or better
 - Packages:
 	* scikit-learn
 	* numpy
 	* mpmath
 	* matplotlib
-	* cdt (causal discovery toolbox) 
+	* cdt (causal discovery toolbox)
+  * rpy2 (to run Rcode of earth regression spline package)  
 
 - R Version: 3.6 or better
 - R packages:
@@ -16,21 +27,8 @@ REQUIREMENTS:
 	* kpcalg/RCIT:  https://github.com/Diviyan-Kalainathan/RCIT
 	* spresebn: https://www.rdocumentation.org/packages/sparsebn/versions/0.1.0
 	* bnlearn: https://www.rdocumentation.org/packages/bnlearn/versions/4.5
+    * earth: https://cran.r-project.org/package=earth
 
 
-##################################################
-#  GLOBE - Implementation of our work titled	 # 
-#  "Discovering Fully Oriented Causal Networks"  #
-#  in Proceedings of AAAI-2021.					 #
-##################################################
-	
-- This version of GLOBE has been cleaned and commented for the ease of use. The implementation can be further optimized but is not in my immediete plans.
-- If you would like to reproduce the results of the experiments stated in the publication, you can find the data and the (automated) version of GLOBE on this link: https://www.dropbox.com/sh/iuy4cv7uzn54m6u/AADH5C7wdC-jQG73RD4rZOXAa?dl=0
-- There are two files that mainly map to the "Algorithm" section of the publication: SkeletonHandler.sh (Contains the edge ranking phase) and DAG.py (contains Forward and Backward Search phases)
-- For scoring functions mentioned in the published work, refer to globe.py
-- This code is not optimized for performance and may contain some unused variables within. Although, I have done my best to resolve the latter.	
-
-
-Author: Osman Ali Mian
-Last Modified: 22nd August 2022
-Contact: osman.mian@cispa.de
+## Contact
+For errors and corrections, please reach out via https://sites.google.com/view/mian.
